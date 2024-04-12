@@ -5,5 +5,3 @@ from tkinter import filedialog
 import pygame
 import os
 from tkinter import messagebox
-
-# Creating main
