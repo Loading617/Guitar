@@ -8,3 +8,4 @@
 self.volume_var = tk.DoubleVar()
 self.volume_scale = ttk.Scale(self.control_frame, orient="horizontal", from=0, to=1,variable=self.volume_var, command=self.set_volume)
 self.volume_scale.grid(row=5, column=0, padx=10, pady=10)
+
