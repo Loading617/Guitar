@@ -1,0 +1,2 @@
+# Progress Bar
+        self.progress_bar = ttk.Progressbar(self)
