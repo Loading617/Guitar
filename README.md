@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="FixLibrary.png" width="160" height="160" alt="FixLibrary">  
+	<img src="Guitar.png" width="160" height="160" alt="Guitar">  
 </p>
 
 # Guitar
