@@ -9,6 +9,16 @@ import android.provider.Settings
 import android.widget.Toast
 import androidx.core.view.WindowCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.tabs.TabLayout
+import com.loading.guitar.data.Permissions
+import com.loading.guitar.data.GuitarSettings
+import com.loading.guitar.databinding.ActivityMainBinding
+import com.loading.guitar.fragments.LibraryFolderFragment
+import com.loading.guitar.helpers.PermissionHelper
 
 class MainActivity : AppCompatActivity() {
 
