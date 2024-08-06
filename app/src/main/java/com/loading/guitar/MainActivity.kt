@@ -1,9 +1,14 @@
 package com.loading.guitar
 
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import com.loading.guitar.databinding.ActivityMainBinding
+import android.provider.Settings
+import android.widget.Toast
+import androidx.core.view.WindowCompat
+import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
 
