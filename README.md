@@ -3,4 +3,4 @@
 </p>
 
 # Guitar
-Guitar is a Music Player/Google TV/Android/Fire TV
+Guitar is a Music Player with Visualizer/Google TV/Android/Fire TV
