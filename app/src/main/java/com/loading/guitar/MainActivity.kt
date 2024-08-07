@@ -1,4 +1,5 @@
 package com.loading.guitar
+package com.loading.guitar.customtablayout
 
 import android.content.Intent
 import android.content.pm.PackageManager
