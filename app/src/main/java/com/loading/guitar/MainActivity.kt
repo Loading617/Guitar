@@ -24,27 +24,47 @@ import com.loading.guitar.helpers.PermissionHelper
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var tabLayout: TabLayout
+    private lateinit var viewPager2: ViewPager2
+    private lateinit var adapter : FragmentPageAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        tabLayout = findViewById(R.id.tabLayout)
+        viewPager2 = findViewById(R.id.viewPager2)
 
-        // Example of a call to a native method
-        binding.sampleText.text = stringFromJNI()
-    }
+        adapter = FragmentPageAdapter(supportFragmentManager , lifecycle)
 
-    /**
-     * A native method that is implemented by the 'guitar' native library,
-     * which is packaged with this application.
-     */
-    external fun stringFromJNI(): String
+        tabLayout.addTab(tabLayout.newTab().setText("Tracks"))
+        tabLayout.addTab(tabLayout.newTab().setText("Albums"))
 
-    companion object {
-        // Used to load the 'guitar' library on application startup.
-        init {
-            System.loadLibrary("guitar")
-        }
+        viewPager2.adapter = adapter
+
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                if (tab != null) {
+                    viewPager2.currentItem = tab.position
+                }
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+
+            }
+
+
+        })
+
+        viewPager2.registerOnPageChangeCallback(object  : ViewPager2.OnPageChangeCallback(){
+            override fun onPageSelected(position: Int){
+                super.onPageSelected(position)
+                tabLayout.selectTab(tabLayout.getTabAt(position))
+            }
+        })
     }
 }
