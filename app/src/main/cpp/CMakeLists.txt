@@ -30,7 +30,7 @@ add_library(${CMAKE_PROJECT_NAME} SHARED
         jni.cpp, jni.h, visualizerview.cpp, audioinput.cpp, audioinputparameters.cpp,
         audiooutputparameters.cpp, audioprocessing.cpp, setaudioinput.cpp, setaudioparameter,
         setaudioparameters.cpp, setaudioprocessing.cpp, startaudioinput.cpp, log.cpp, log.h,
-        beat-detection.cpp, beatdetectionparamters.cpp, pan.cpp, presetmanager.cpp, preset.cpp,
+        beat-detection.cpp, beatdetectionparameters.cpp, pan.cpp, presetmanager.cpp, preset.cpp,
         preset2.cpp, preset3.cpp, preset4.cpp, preset5.cpp, preset6.cpp, preset7.cpp, preset8.cpp,
         preset9.cpp, preset10.cpp, preset11.cpp, preset12.cpp, preset13.cpp, preset14.cpp,
         preset15.cpp, preset16.cpp, preset17.cpp, basstreble.cpp, jni.cpp, jni.h & midrange.cpp)
