@@ -3,6 +3,6 @@
 </p>
 
 # Guitar
-Guitar is a Music Player with Visualizer/Google TV/Android/Fire TV
+Guitar is a Music Player Cross Platform
 
 Also this is a [Winamp](https://winamp.com) Inspiration Project!!!!
